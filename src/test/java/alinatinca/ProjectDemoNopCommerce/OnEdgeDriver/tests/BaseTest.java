@@ -6,20 +6,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-    protected EdgeDriver edgeDriver;
-
-    @BeforeMethod
-    public void createEdgeDriverForDesktop(){
-        edgeDriver = BrowserManager.createEdgeDriverForDesktop();
-    }
-
-    @BeforeMethod
-    public void createEdgeDriverForMobile(){
-        edgeDriver = BrowserManager.createEdgeDriverForMobile();
-    }
-
-    @AfterMethod
-    public void quitDriver(){
-        edgeDriver.quit();
-    }
+//    protected EdgeDriver edgeDriver;
+//
+//    @BeforeMethod
+//    public void createEdgeDriverForDesktop(){
+//        edgeDriver = BrowserManager.createEdgeDriverForDesktop();
+//    }
+//
+//    @BeforeMethod
+//    public void createEdgeDriverForMobile(){
+//        edgeDriver = BrowserManager.createEdgeDriverForMobile();
+//    }
+//
+//    @AfterMethod
+//    public void quitDriver(){
+//        edgeDriver.quit();
+//    }
 }
