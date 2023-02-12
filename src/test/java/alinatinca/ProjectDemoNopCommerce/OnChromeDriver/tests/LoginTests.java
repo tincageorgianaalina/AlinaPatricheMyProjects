@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,8 @@ public class LoginTests extends BaseTest{
 
     WebDriverWait wait;
 
-    @Test(description = "verify login functionals with valid credentials")
+    //this method is a prerequisite for continuing on the site
+    @BeforeClass(description = "verify login functionals with valid credentials")
     public void testValidLogin(){
         chromeDriver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
         //go to URL
