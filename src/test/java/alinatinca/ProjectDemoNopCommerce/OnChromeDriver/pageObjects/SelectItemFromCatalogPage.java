@@ -10,7 +10,10 @@ import java.util.List;
 
 public class SelectItemFromCatalogPage {
 
+    //create the useful attributes
     protected ChromeDriver chromeDriver;
+    public static final String PRODUCT_LIST_APPLE_ITEM_CSS = "#products-grid tbody tr";
+    public static final String PRODUCT_LIST_NIKON_CAMERA_ITEM_CSS = "#products-grid tbody tr:nth-child(14)";
 
     //create the LoginPage constructor
     public SelectItemFromCatalogPage(ChromeDriver chromeDriver){
@@ -18,8 +21,8 @@ public class SelectItemFromCatalogPage {
         PageFactory.initElements(chromeDriver, this);
     }
 
-    //identify all the elements from the page
-    @FindBy(css = "nav.mt-2  .nav-item.has-treeview:nth-child(2)")
+    //identify all the useful elements from the page
+    @FindBy(css = "nav.mt-2 .nav-item.has-treeview:nth-child(2)")
     private WebElement catalog;
 
     @FindBy(xpath = "//a[@href='/Admin/Product/List']")
@@ -32,10 +35,16 @@ public class SelectItemFromCatalogPage {
     private WebElement searchButton;
 
     @FindBy(css = "#products-grid tbody tr")
-    private List<WebElement> productsList;
+    private List<WebElement> productsListForAppleMacItem;
 
-    @FindBy(css = "#products-grid > tbody > tr:nth-child(4) > td:nth-child(3)")
-    private List<WebElement> itemSelectedFromList;
+    @FindBy(css ="#products-grid tbody tr:nth-child(14)")
+    private List<WebElement> productsListForNikonCameraItem;
+
+    @FindBy(css = "#products-grid tbody tr td:nth-child(3)")
+    private List<WebElement> itemAppleMacFromCatalog;
+
+    @FindBy(css = "#products-grid tbody tr:nth-child(14) td:nth-child(3)")
+    private List<WebElement> itemNikonCameraFromCatalog;
 
     //define and assign methods to each element from the page
     public WebElement getCatalog() {
@@ -54,11 +63,19 @@ public class SelectItemFromCatalogPage {
         return searchButton;
     }
 
-    public List<WebElement> getProductsList() {
-        return productsList;
+    public List<WebElement> getProductsListForAppleMacItem() {
+        return productsListForAppleMacItem;
     }
 
-    public List<WebElement> getItemSelectedFromList() {
-        return itemSelectedFromList;
+    public List<WebElement> getProductsListForNikonCameraItem() {
+        return productsListForNikonCameraItem;
+    }
+
+    public List<WebElement> getItemAppleMacFromCatalog() {
+        return itemAppleMacFromCatalog;
+    }
+
+    public List<WebElement> getItemNikonCameraFromCatalog() {
+        return itemNikonCameraFromCatalog;
     }
 }

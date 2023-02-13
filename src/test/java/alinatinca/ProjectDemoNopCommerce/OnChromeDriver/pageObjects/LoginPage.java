@@ -15,7 +15,7 @@ public class LoginPage {
         PageFactory.initElements(chromeDriver, this);
     }
 
-    //identify all the elements from the page
+    //identify all the useful elements from the page
     @FindBy(id="Email")
     private WebElement email;
 

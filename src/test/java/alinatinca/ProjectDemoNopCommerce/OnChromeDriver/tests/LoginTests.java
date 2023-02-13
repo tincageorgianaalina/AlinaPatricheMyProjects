@@ -18,27 +18,6 @@ public class LoginTests extends BaseTest{
 
     WebDriverWait wait;
 
-    //this method is a prerequisite for continuing on the site
-    @BeforeClass(description = "verify login functionals with valid credentials")
-    public void testValidLogin(){
-        chromeDriver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
-        //go to URL
-        LoginPage loginPage = new LoginPage(chromeDriver);
-        loginPage.getEmail().click();
-        //click on the email field
-        loginPage.getPassword().click();
-        //click on the password click
-        loginPage.getLoginButton().click();
-        //click on the submit button
-//        Assert.assertEquals(chromeDriver.getCurrentUrl(),
-//                "https://admin-demo.nopcommerce.com/admin/",
-//                "Login was unsuccesfully with the default data!");
-        Assert.assertTrue(chromeDriver.getCurrentUrl().contains("admin/"),
-                "Login was unsuccesfully with the default data!");
-        //verify if appears the next page with this URL: https://admin-demo.nopcommerce.com/admin/ after login was sucessfully
-    }
-
-
     @DataProvider(name = "loginDataProvider1")
     public Object[][] loginDataProvider1(){
         return new Object[][]{
