@@ -1,4 +1,4 @@
-package alinatinca.NotionsOfTheory;
+package alinatinca.NotionsOfTheory.ExceptionsAndErrors;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -38,7 +38,7 @@ public class ActionsExamples extends BaseTest {
             WebElement doubleClickMeButton = chromeDriver.findElement(By.id("doubleClickBtn"));
             Actions actions = new Actions(chromeDriver);
             actions.doubleClick(doubleClickMeButton).build().perform();
-            //double click on the button from the page, called double click me}
+            //double click on the button from the page, called double click me
         } catch (Exception | Error e) {
             System.out.print("Exception has been caught!");
         } finally {
@@ -84,6 +84,7 @@ public class ActionsExamples extends BaseTest {
             WebElement trgt = chromeDriver.findElement(By.id("droppable"));
             Actions actions = new Actions(chromeDriver);
             actions.dragAndDrop(src, trgt).build().perform();
+            //drag and drop on the page
             System.out.println("Drag and drop action has been performed successfully");
         } catch (Exception | Error e) {
             System.out.print("Exception has been caught!");
@@ -99,6 +100,7 @@ public class ActionsExamples extends BaseTest {
             WebElement src = chromeDriver.findElement(By.id("dragBox"));
             Actions actions = new Actions(chromeDriver);
             actions.dragAndDropBy(src, 200,150).build().perform();
+            //drag and drop on the page based on coordonates
         }
         catch (Exception | Error e){
             System.out.print("Exception has been caught!");

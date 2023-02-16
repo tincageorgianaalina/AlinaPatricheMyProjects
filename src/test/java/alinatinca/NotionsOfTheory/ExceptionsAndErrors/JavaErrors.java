@@ -1,4 +1,4 @@
-package alinatinca.NotionsOfTheory;
+package alinatinca.NotionsOfTheory.ExceptionsAndErrors;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -57,6 +57,16 @@ public class JavaErrors {
             System.out.print("Number is: " + i);
             i++;
             recursiveMethod(number, i);
+        }
+    }
+
+    public static void fun() {
+        try {
+            throw new NullPointerException("demo");    //aruncam o noua exceptie de tip Null...
+        } catch (NullPointerException e) {              //in blocul catch ne prinde aceasta eroare
+            System.out.println("Caught inside fun().");
+            throw e; // rethrowing the exception            //insa o aruncam din nou dupa ce am prins-o
+            // si pt ca nu mai urmeaza alt CATCH o va printa la consola
         }
     }
 }
