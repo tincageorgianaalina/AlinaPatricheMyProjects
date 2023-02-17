@@ -56,7 +56,7 @@ public class Screenshots extends BaseTest {
         System.out.println("Test is passed!");
     }
 
-    @Test(description = "verify how to make a screenshot for a test case with fake alert")
+    @Test(description = "verify how to make a screenshot for a test case with a fake alert")
     public void screenshotTest2() throws IOException {
         try{
             chromeDriver = BrowserManager.createChromeDriver();
