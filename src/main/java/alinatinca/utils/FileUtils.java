@@ -11,7 +11,7 @@ public class FileUtils {
 
 //    public static void takeScreenshot(ChromeDriver chromeDriver, String fileName){
 //        File source = chromeDriver.getScreenshotAs(OutputType.FILE);
-////        String destinationFile = System.getProperty("user.dir")+ "C:\\\\Users\\\\Home\\\\IdeaProjects\""
+////        String destinationFile = System.getProperty("user.dir")+ ""
 //        File destinationFile = new File(System.getProperty("user.dir") + "C:\\Users\\Home\\IdeaProjects");
 //        try{
 //            org.apache.commons.io.FileUtils.copyFile(source,destinationFile);
@@ -21,7 +21,7 @@ public class FileUtils {
 //            e.printStackTrace();
 //        }
 //    }
-
+//
 //    public static void takeScreenshot(ChromeDriver chromeDriver, String fileName){
 //        File screenshot = chromeDriver.getScreenshotAs(OutputType.FILE);
 //        try{

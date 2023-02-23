@@ -1,4 +1,4 @@
-package alinatinca.NotionsOfTheory.TestNG;
+package alinatinca.NotionsOfTheory.TestNG.RunForSuite;
 
 import alinatinca.driver.BrowserManager;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,8 +30,4 @@ public class BeforeMethodsAndAfterMethods {
     public void goToURLTest(){
         chromeDriver.get("https://demoqa.com/");
     }
-
-
-
-
 }

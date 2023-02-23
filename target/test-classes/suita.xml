@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="First Suite TestNG" verbose="1" >
+    <test name="First test from TestNG.xml file" >
+        <classes>
+            <class name="alinatinca.NotionsOfTheory.TestNG.RunForSuite.SeleniumAnnotations" >
+                <methods>
+<!--                    <include name="test1"/>-->
+                    <exclude name="test1"/>
+                </methods>
+            </class>
+        </classes>
+<!--        <packages>-->
+<!--            <package name="RunForSuite.*"/>-->
+<!--        </packages>-->
+    </test>
+
+<!--    <test name="The second test from TestNG.xml file">-->
+<!--        <classes>-->
+<!--            <class name="alinatinca.NotionsOfTheory.TestNG.RunForSuite.BeforeMethodsAndAfterMethods"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

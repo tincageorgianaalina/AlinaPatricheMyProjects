@@ -1,4 +1,4 @@
-package alinatinca.NotionsOfTheory.TestNG;
+package alinatinca.NotionsOfTheory.TestNG.RunForSuite;
 
 import org.testng.annotations.*;
 
@@ -79,5 +79,4 @@ public class SeleniumAnnotations {
         System.out.println("After Suite");
     }
     //12.se ruleazaz ultimul dupa intreaga suita de teste
-
 }
