@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 @Test
-public class TestNG extends BaseTest {
+public class TestAnnotation extends BaseTest {
 
     //the first element of TestNG used on classes and methods!
     //For @Test on classes, it will run only the public methods, not the private methods;
