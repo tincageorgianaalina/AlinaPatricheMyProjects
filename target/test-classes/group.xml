@@ -4,7 +4,8 @@
     <test name="First group test from TestNG.xml file" >
         <groups>
             <run>
-                <include name="Grupul 1"/>
+<!--                <include name="Group 1"/>-->
+                <exclude name="Group 1"/>
             </run>
         </groups>
         <classes>

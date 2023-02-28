@@ -19,5 +19,9 @@
 <!--        <classes>-->
 <!--            <class name="alinatinca.NotionsOfTheory.TestNG.RunForSuite.BeforeMethodsAndAfterMethods"/>-->
 <!--        </classes>-->
+
+<!--            <packages>-->
+<!--                <package name=""/>-->
+<!--            </packages>-->
 <!--    </test>-->
 </suite>
