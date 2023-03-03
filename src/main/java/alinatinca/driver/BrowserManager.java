@@ -29,7 +29,6 @@ public class BrowserManager {
         map.put("deviceName", "iPhone X");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setExperimentalOption("mobileEmulation", map);
-        WebDriverManager.chromedriver().setup();
         return new ChromeDriver(chromeOptions);
     }
     //create this method to emulate it on iPhone X mobile

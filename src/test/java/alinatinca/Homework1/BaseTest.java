@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import javax.management.Descriptor;
 
 public class BaseTest {
+
    protected ChromeDriver chromeDriver;
 
     @BeforeMethod(groups = "desktop")
@@ -17,11 +18,11 @@ public class BaseTest {
     }
    // create this method to open chrome browser instance on desktop
 
-//    @BeforeMethod(groups = "mobile")
-//    public void  createChromeDriverForMobile(){
-//        chromeDriver = BrowserManager.getChromeDriverWithOptionsForMobile();
-//    }
-//    //create this method to open chrome browser instance on mobile
+    @BeforeMethod(groups = "mobile")
+    public void  createChromeDriverForMobile(){
+        chromeDriver = BrowserManager.getChromeDriverWithOptionsForMobile();
+    }
+    //create this method to open chrome browser instance on mobile
 
     @AfterMethod(alwaysRun = true)
     public void quitChromeDriver(){

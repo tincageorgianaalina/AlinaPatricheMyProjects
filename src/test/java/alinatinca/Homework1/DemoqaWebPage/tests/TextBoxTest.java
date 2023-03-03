@@ -21,7 +21,7 @@ public class TextBoxTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify how to fill the form from Text Box category")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to fill the form from Text Box category")
     public void fillDataTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -49,5 +49,6 @@ public class TextBoxTest extends BaseTest {
         WebElement submitButton = chromeDriver.findElement(By.id("submit"));
         submitButton.click();
         System.out.println("Click on submit button!");
+        System.out.println("Test passed!");
     }
 }

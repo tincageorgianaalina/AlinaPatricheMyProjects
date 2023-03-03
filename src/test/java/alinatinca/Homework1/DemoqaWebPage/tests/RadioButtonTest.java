@@ -9,7 +9,7 @@ public class RadioButtonTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify how to click on yes radio button")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to click on yes radio button")
     public void clickOnYesRadioButton(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -19,9 +19,10 @@ public class RadioButtonTest extends BaseTest {
         Assert.assertEquals(radioButtonPAGE.getConfirmationMessageForYesButton().getText(),
                 "You have selected Yes",
                 "The confirmation message is not displayed!");
+        System.out.println("Test passed!");
     }
 
-    @Test(description = "verify how to click on impressive radio button")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to click on impressive radio button")
     public void clickOnImpressiveRadioButtonTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -31,5 +32,6 @@ public class RadioButtonTest extends BaseTest {
         Assert.assertTrue(radioButtonPAGE.getGetConfirmationMessageForImpressiveButton().isDisplayed(),
                 "he confirmation message is not displayed!");
         System.out.println("The confirmation message has been checked!");
+        System.out.println("Test passed!");
     }
 }

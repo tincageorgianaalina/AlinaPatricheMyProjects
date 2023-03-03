@@ -8,7 +8,7 @@ public class DynamicHTMLTableTest extends BaseTest {
 
     String URL = "https://testpages.herokuapp.com/styled/index.html";
 
-    @Test(description = "display information on the Dynamic HTML TABLE url")
+    @Test(groups = {"mobile", "desktop"}, description = "display information on the Dynamic HTML TABLE url")
     public void getDataDynamicHTMLTableTest(){
         chromeDriver.get(URL);
         System.out.println("Go to Heroku web page");
@@ -25,5 +25,6 @@ public class DynamicHTMLTableTest extends BaseTest {
         dynamicHTMLTablePAGE.getIdField().sendKeys("100");
         System.out.println("Enter 100 in id field");
         dynamicHTMLTablePAGE.clickOnRefreshButton();
+        System.out.println("Test passed!");
     }
 }

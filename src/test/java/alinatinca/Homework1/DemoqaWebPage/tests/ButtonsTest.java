@@ -9,7 +9,7 @@ public class ButtonsTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify how to the simple button is clicked")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to the simple button is clicked")
     public void clickMeButtonTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements page");
@@ -25,9 +25,10 @@ public class ButtonsTest extends BaseTest {
                 "You have done a dynamic click",
                 "The confirmation message is not displayed on the page ");
         System.out.println("The confirmation message has been checked; it is displayed on the page!");
+        System.out.println("Test passed!");
     }
 
-    @Test(description = "verify how to right click on button")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to right click on button")
     public void rightClickMeButtonTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements page");
@@ -40,9 +41,10 @@ public class ButtonsTest extends BaseTest {
                 "You have done a right click",
                 "The confirmation message is not displayed on the page!");
         System.out.println("The confirmation message has been checked; it is displayed on the page!");
+        System.out.println("Test passed!");
     }
 
-    @Test(description = "verify how to double click on button")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to double click on button")
     public void doubleClickMeButtonTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements page");
@@ -55,5 +57,6 @@ public class ButtonsTest extends BaseTest {
                 "You have done a double click",
                 "The confirmation message is not displayed on the page!");
         System.out.println("The confirmation message has been checked; it is displayed on the page!");
+        System.out.println("Test passed!");
     }
 }

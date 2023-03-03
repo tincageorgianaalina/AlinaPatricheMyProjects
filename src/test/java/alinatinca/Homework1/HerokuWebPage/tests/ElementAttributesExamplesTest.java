@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class ElementAttributesExamplesTest extends BaseTest {
     String url = "https://testpages.herokuapp.com/styled/index.html";
 
-    @Test(description = "display the information on the ElementAttributesExamples url")
+    @Test(groups = {"mobile", "desktop"}, description = "display the information on the ElementAttributesExamples url")
     public void getDataElementAttributesExamplesTest(){
         chromeDriver.get(url);
         System.out.println("Navigate to Heroku web page");
@@ -20,5 +20,6 @@ public class ElementAttributesExamplesTest extends BaseTest {
         System.out.println("The second paragraph is: " + elementAttributesExamplesPAGE.getParagraph2().getText());
         System.out.println("The third title is: " + elementAttributesExamplesPAGE.getTitle3().getText());
         System.out.println("The third paragraph is: " + elementAttributesExamplesPAGE.getParagraph3().getText());
+        System.out.println("Test passed!");
     }
 }

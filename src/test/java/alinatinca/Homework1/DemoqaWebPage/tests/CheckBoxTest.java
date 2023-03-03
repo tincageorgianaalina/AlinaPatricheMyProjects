@@ -9,7 +9,7 @@ public class CheckBoxTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify how to click on checkbox")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to click on checkbox")
     public void checkBoxTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -24,5 +24,6 @@ public class CheckBoxTest extends BaseTest {
 //        }
         System.out.println("Go to CheckBox category");
         checkBoxPAGE.clickOnBoxHomeButton();
+        System.out.println("Test passed!");
     }
 }

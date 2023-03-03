@@ -10,7 +10,7 @@ public class LinksTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify that Home link can be opened")
+    @Test(groups = {"mobile", "desktop"}, description = "verify that Home link can be opened")
     public void homeLinkTest() {
         try {
             chromeDriver.get(URL);
@@ -29,7 +29,7 @@ public class LinksTest extends BaseTest {
         }
     }
 
-    @Test(description = "verify that Created link can be clicked and after that a message is displayed on the page")
+    @Test(groups = {"mobile", "desktop"}, description = "verify that Created link can be clicked and after that a message is displayed on the page")
     public void createdLinkTest() {
         try {
             chromeDriver.get(URL);
@@ -48,7 +48,7 @@ public class LinksTest extends BaseTest {
         }
     }
 
-    @Test(description = "verify that No Content link can be clicked and after that a message is displayed on the page")
+    @Test(groups = {"mobile", "desktop"}, description = "verify that No Content link can be clicked and after that a message is displayed on the page")
     public void noContentLinkTest() {
         try {
             chromeDriver.get(URL);
@@ -67,7 +67,7 @@ public class LinksTest extends BaseTest {
         }
     }
 
-    @Test(description = "verify that No Content link can be clicked and after that a message is displayed on the page")
+    @Test(groups = {"mobile", "desktop"}, description = "verify that No Content link can be clicked and after that a message is displayed on the page")
     public void movedLinkTest() {
         try {
             chromeDriver.get(URL);
@@ -86,7 +86,7 @@ public class LinksTest extends BaseTest {
         }
     }
 
-    @Test(description = "verify that No Content link can be clicked and after that a message is displayed on the page")
+    @Test(groups = {"mobile", "desktop"}, description = "verify that No Content link can be clicked and after that a message is displayed on the page")
     public void badRequestLinkTest(){
         try{
             chromeDriver.get(URL);

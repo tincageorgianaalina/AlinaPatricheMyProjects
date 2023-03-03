@@ -8,7 +8,7 @@ public class FindByPlaygroundLocatorExamplesTest extends BaseTest {
 
     String URL = "https://testpages.herokuapp.com/styled/index.html";
 
-    @Test(description = "display information on the FindByPlaygroundLocatorExamples url ")
+    @Test(groups = {"mobile", "desktop"}, description = "display information on the FindByPlaygroundLocatorExamples url ")
     public void getDataFindByPlaygroundTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Heroku web page");
@@ -18,5 +18,6 @@ public class FindByPlaygroundLocatorExamplesTest extends BaseTest {
         System.out.println("Title is: " + findByPlaygroundLocatorExamplesPAGE.getTitle().getText());
         System.out.println("Paragraph is: " + findByPlaygroundLocatorExamplesPAGE.getuParagraph().getText());
         System.out.println(findByPlaygroundLocatorExamplesPAGE.getuParagraph().getText());
+        System.out.println("Test passed!");
     }
 }

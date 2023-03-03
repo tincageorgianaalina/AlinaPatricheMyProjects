@@ -13,7 +13,7 @@ public class TableTestPageTest extends BaseTest {
 
     String URL = "https://testpages.herokuapp.com/styled/index.html";
 
-    @Test(description = "display the information on the able Test Page url")
+    @Test(groups = {"mobile", "desktop"}, description = "display the information on the able Test Page url")
     public void getDataHTMLTableTest() {
         try{
             chromeDriver.get(URL);

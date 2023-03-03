@@ -17,7 +17,7 @@ public class WebTablesTest extends BaseTest {
 
     String URL = "https://demoqa.com/elements";
 
-    @Test(description = "verify how to get data in table")
+    @Test(groups = {"mobile", "desktop"}, description = "verify how to get data in table")
     public void getDataTableTest() {
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -29,9 +29,10 @@ public class WebTablesTest extends BaseTest {
         System.out.println("The first row from table: " + webTablesPAGE.getCierraRow().getText());
         Assert.assertTrue(webTablesPAGE.getCierraRow().isDisplayed(), "The first row is not displayed!");
         System.out.println("The first row has been checked!");
+        System.out.println("Test passed!");
     }
 
-    @Test(description = "verify confirmation for editing table data")
+    @Test(groups = {"mobile", "desktop"}, description = "verify confirmation for editing table data")
     public void editDataTableConfirmationTest() throws IOException {
         try {
             chromeDriver.get(URL);
@@ -55,7 +56,7 @@ public class WebTablesTest extends BaseTest {
         }
     }
 
-    @Test(description = "verify confirmation for editing table data")
+    @Test(groups = {"mobile", "desktop"}, description = "verify confirmation for editing table data")
     public void editDataTableTest(){
         chromeDriver.get(URL);
         System.out.println("Navigate to Demoqa Elements web page");
@@ -70,5 +71,6 @@ public class WebTablesTest extends BaseTest {
         webTablesPAGE2.getSubmitButton().click();
         Assert.assertEquals(webTablesPAGE2.getConfirmationEditSalaryField().getText(), "100", "It is not match!");
         System.out.println("Salary has been checked after it was edited");
+        System.out.println("Test passed!");
     }
 }
