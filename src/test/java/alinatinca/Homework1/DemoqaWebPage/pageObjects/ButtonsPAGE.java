@@ -14,7 +14,9 @@ public class ButtonsPAGE {
         this.chromeDriver = chromeDriver;
         PageFactory.initElements(chromeDriver, this);
     }
+    //Create the constructor that can define the required parameters for this test case
 
+    //Find the elements on the web page
     @FindBy(xpath = "//button[text()='Click Me']")
     WebElement clickMeButton;
 
@@ -33,6 +35,7 @@ public class ButtonsPAGE {
     @FindBy(css = "#doubleClickMessage")
     WebElement confirmationMessageForDoubleClickMeButton;
 
+    //Create methods for these elements
     public void clickOnMeButton(){
         clickMeButton.click();
     }

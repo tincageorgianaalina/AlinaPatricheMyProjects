@@ -13,7 +13,9 @@ public class LinksPAGE {
         this.chromeDriver = chromeDriver;
         PageFactory.initElements(chromeDriver, this);
     }
+    //Create the constructor that can define the required parameters for this test case
 
+    //Find the elements on the web page
     @FindBy(id = "dynamicLink")
     WebElement homeLink;
 
@@ -26,22 +28,13 @@ public class LinksPAGE {
     @FindBy(id = "moved")
     WebElement movedLink;
 
-    @FindBy(id = "bad-request")
+    @FindBy(partialLinkText = "Bad Request")
     WebElement badRequestLink;
-
-    @FindBy(id = "unauthorized")
-    WebElement unauthorizedLink;
-
-    @FindBy(id = "forbidden")
-    WebElement forbiddenLink;
-
-    @FindBy(id = "invalid-url")
-    WebElement notFoundLink;
 
     @FindBy(id = "linkResponse")
     WebElement conformationMessageLink;
 
-
+    //Create methods for these elements
     public void clickOnHomeLink() {
         homeLink.click();
         System.out.println("Click on Home link");
@@ -65,21 +58,6 @@ public class LinksPAGE {
     public void clickOnBadRequestLink() {
         badRequestLink.click();
         System.out.println("Click on Bad Request link");
-    }
-
-    public void clickOnUnauthorizedLink() {
-        unauthorizedLink.click();
-        System.out.println("Click on Unauthorized link");
-    }
-
-    public void clickOnForbiddenLink() {
-        forbiddenLink.click();
-        System.out.println("Click on Forbidden link");
-    }
-
-    public void clickOnNotFoundLink() {
-        notFoundLink.click();
-        System.out.println("Click on Not Found link");
     }
 
     public WebElement getConformationMessageLink() {

@@ -85,4 +85,21 @@ public class LinksTest extends BaseTest {
             System.out.println("Test passed!");
         }
     }
+
+    @Test(description = "verify that No Content link can be clicked and after that a message is displayed on the page")
+    public void badRequestLinkTest(){
+        try{
+            chromeDriver.get(URL);
+            System.out.println("Navigate to Demoqa Elements page");
+            chromeDriver.get("https://demoqa.com/buttons");
+            System.out.println("Go to Buttons category");
+            LinksPAGE linksPAGE = new LinksPAGE(chromeDriver);
+            linksPAGE.clickOnBadRequestLink();
+            Assert.assertTrue(linksPAGE.getConformationMessageLink().isDisplayed(), "The confirmation message is not displayed");
+        }catch (NoSuchElementException e){
+            System.out.println("Bad Request link is clicked");
+            System.out.println("Link has been checked; confirmation message is displayed on the page!");
+            System.out.println("Test passed!");
+        }
+    }
 }

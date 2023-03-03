@@ -13,7 +13,9 @@ public class RadioButtonPAGE {
         this.chromeDriver = chromeDriver;
         PageFactory.initElements(chromeDriver,this);
     }
+    //Create the constructor that can define the required parameters for this test case
 
+    //Find the elements on the web page
     @FindBy (css = ".element-list.collapse.show .menu-list > li:nth-child(3) ")
     WebElement URL;
 
@@ -29,6 +31,7 @@ public class RadioButtonPAGE {
     @FindBy(css = ".mt-3")
     WebElement confirmationMessageForImpressiveButton;
 
+    //Create methods for these elements
     public void clickOnUrl() {
         URL.click();
         System.out.println("Go to Radio Button category");

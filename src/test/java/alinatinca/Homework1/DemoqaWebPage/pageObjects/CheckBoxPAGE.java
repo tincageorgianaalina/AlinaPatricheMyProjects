@@ -13,7 +13,9 @@ public class CheckBoxPAGE {
         this.chromeDriver = chromeDriver;
         PageFactory.initElements(chromeDriver, this);
     }
+    //Create the constructor that can define the required parameters for this test case
 
+    //Find the elements on the web page
     @FindBy(className = "main-header")
     WebElement title;
 
@@ -23,6 +25,7 @@ public class CheckBoxPAGE {
     @FindBy(css = ".rct-checkbox")
     WebElement checkBoxHomeButton;
 
+    //Create methods for these elements
     public WebElement getTitle() {
         return title;
     }
