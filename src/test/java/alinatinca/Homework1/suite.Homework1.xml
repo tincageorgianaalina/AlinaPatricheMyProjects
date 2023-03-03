@@ -1,7 +1,0 @@
-<suite name="SuitaTestNGHomework1" verbose="1" >
-    <test name="editDataTableConfirmationTest" >
-        <classes>
-            <class name="alinatinca.Homework1.DemoqaWebPage.tests.WebTablesTest" />
-        </classes>
-    </test>
-</suite>
