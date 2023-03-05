@@ -1,4 +1,4 @@
-package alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests;
+package alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.pageObjects;
 
 import alinatinca.Homework1.DemoqaWebPage.pageObjects.CheckBoxPAGE;
 import org.openqa.selenium.Alert;

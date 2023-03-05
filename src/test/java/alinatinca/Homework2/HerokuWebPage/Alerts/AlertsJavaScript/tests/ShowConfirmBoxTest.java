@@ -1,7 +1,7 @@
-package alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.pageObjects;
+package alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests;
 
 import alinatinca.Homework1.BaseTest;
-import alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests.ShowConfirmBoxPAGE;
+import alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.pageObjects.ShowConfirmBoxPAGE;
 import org.testng.annotations.Test;
 
 public class ShowConfirmBoxTest extends BaseTest {
