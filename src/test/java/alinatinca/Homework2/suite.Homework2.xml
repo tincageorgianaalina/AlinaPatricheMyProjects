@@ -1,0 +1,7 @@
+<suite name="SuitaTestNGHomework2" verbose="1" >
+    <test name="showConfirmBoxAlertTest" >
+        <classes>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests.ShowConfirmBoxTest" />
+        </classes>
+    </test>
+</suite>
