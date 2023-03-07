@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class BasicHTMLForExampleTest extends BaseTest {
 
-    @Test(description = "verify how to complete a form with data")
+    @Test(description = "verify how to complete a form with data", groups = {"desktop.H2", "mobile.H2"})
     public void fillDataInToTheFormTest(){
         chromeDriver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
         System.out.println("Navigate to Heroku HTML Form page");

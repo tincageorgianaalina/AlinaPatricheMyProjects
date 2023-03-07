@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ShowFakeAlertBoxTest extends BaseTest {
 
-    @Test(description = "verify how to interact with a fake alert")
+    @Test(description = "verify how to interact with a fake alert", groups = {"desktop.H2", "mobile.H2"})
     public void showAlertBoxTest(){
         try{
             chromeDriver.get("https://testpages.herokuapp.com/styled/alerts/fake-alert-test.html");

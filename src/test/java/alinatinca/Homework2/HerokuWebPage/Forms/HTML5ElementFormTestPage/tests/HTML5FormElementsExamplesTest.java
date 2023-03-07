@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class HTML5FormElementsExamplesTest extends BaseTest {
 
-    @Test(description = "verify how to complete a special form")
+    @Test(description = "verify how to complete a special form", groups = {"desktop.H2", "mobile.H2"})
     public void fillFormWithDataTest(){
         chromeDriver.get("https://testpages.herokuapp.com/styled/html5-form-test.html");
         System.out.println("Navigate to Heroku HTML5 Form page");

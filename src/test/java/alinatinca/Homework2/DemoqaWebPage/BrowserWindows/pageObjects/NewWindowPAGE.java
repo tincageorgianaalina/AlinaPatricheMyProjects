@@ -1,4 +1,4 @@
-package alinatinca.Homework2.HerokuWebPage.Windows.WindowsLinkTestPage.pageObjects;
+package alinatinca.Homework2.DemoqaWebPage.BrowserWindows.pageObjects;
 
 import com.google.j2objc.annotations.Weak;
 import org.openqa.selenium.WebElement;

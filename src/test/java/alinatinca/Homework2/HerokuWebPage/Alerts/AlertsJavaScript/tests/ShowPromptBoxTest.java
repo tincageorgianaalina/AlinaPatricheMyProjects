@@ -10,7 +10,7 @@ import javax.sound.midi.SysexMessage;
 
 public class ShowPromptBoxTest extends BaseTest {
 
-    @Test(description = "verify how to accept or dismiss a alert with text")
+    @Test(description = "verify how to accept or dismiss a alert with text", groups = {"desktop.H2", "mobile.H2"})
     public void showPromptBoxAlert(){
         chromeDriver.get("https://testpages.herokuapp.com/styled/alerts/alert-test.html");
         System.out.println("Navigate to Heroku Alerts web page");

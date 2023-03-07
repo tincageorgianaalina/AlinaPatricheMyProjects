@@ -1,0 +1,22 @@
+<suite name="Homework2-Desktop Test Suite" verbose="1" >
+    <test name="Desktop Tests" >
+        <groups>
+            <run>
+                <inlcude name="desktop.H2"/>
+                <inlcude name ="mobile.H2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="alinatinca.Homework2.DemoqaWebPage.BrowserWindows.tests.NewTabTest"/>
+            <class name="alinatinca.Homework2.DemoqaWebPage.BrowserWindows.tests.NewWindowMessageTest"/>
+            <class name="alinatinca.Homework2.DemoqaWebPage.BrowserWindows.tests.NewWindowTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests.ShowAlertBoxTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests.ShowConfirmBoxTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.AlertsJavaScript.tests.ShowPromptBoxTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.FakeAlerts.tests.ShowFakeAlertBoxTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Alerts.FakeAlerts.tests.ShowModalDialogTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Forms.HTML5ElementFormTestPage.tests.HTML5FormElementsExamplesTest"/>
+            <class name="alinatinca.Homework2.HerokuWebPage.Forms.HTMLFormExample.tests.BasicHTMLForExampleTest"/>
+        </classes>
+    </test>
+</suite>

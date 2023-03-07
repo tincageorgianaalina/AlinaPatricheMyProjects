@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ShowAlertBoxTest extends BaseTest {
 
-    @Test(description = "verify how to accept a simple alert")
+    @Test(description = "verify how to accept a simple alert", groups = {"desktop.H2", "mobile.H2"})
     public void showAlertBoxTest(){
         chromeDriver.get("https://testpages.herokuapp.com/styled/alerts/alert-test.html");
         System.out.println("Navigate to Heroku Alerts web page ");

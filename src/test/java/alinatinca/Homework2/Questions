@@ -1,0 +1,5 @@
+1. Go to the Alerts section at https://testpages.herokuapp.com/styled/index.html
+2. Go through the HTML Forms Example section from https://testpages.herokuapp.com/styled/index.html
+3. Go through this section: https://demoqa.com/browser-windows
+4. At each point, an attempt will be made to locate an element that does not exist on the page, and the error will be caught in a try-catch block. Inside a catch a screenshot will be taken, and the browser will close inside a finally block.
+5. The theme is submitted on Github, and a link to the repository will be uploaded on the Skillbrain platform

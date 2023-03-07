@@ -1,4 +1,4 @@
-package alinatinca.Homework2.HerokuWebPage.Windows.WindowsLinkTestPage.pageObjects;
+package alinatinca.Homework2.DemoqaWebPage.BrowserWindows.pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,11 +8,11 @@ import org.testng.Assert;
 
 import java.util.Set;
 
-public class NewTabWindowPAGE {
+public class NewTabPAGE {
 
     ChromeDriver chromeDriver;
 
-    public NewTabWindowPAGE(ChromeDriver chromeDriver){
+    public NewTabPAGE(ChromeDriver chromeDriver){
         this.chromeDriver = chromeDriver;
         PageFactory.initElements(chromeDriver, this);
     }

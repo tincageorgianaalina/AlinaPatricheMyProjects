@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ShowConfirmBoxTest extends BaseTest {
 
-    @Test(description = "verify how to accept and dismiss a bob alert")
+    @Test(description = "verify how to accept and dismiss a bob alert", groups = {"desktop.H2", "mobile.H2"})
     public void showConfirmBoxAlertTest(){
         chromeDriver.get("https://testpages.herokuapp.com/styled/alerts/alert-test.html");
         System.out.println("Navigate to Heroku Alerts web page ");
