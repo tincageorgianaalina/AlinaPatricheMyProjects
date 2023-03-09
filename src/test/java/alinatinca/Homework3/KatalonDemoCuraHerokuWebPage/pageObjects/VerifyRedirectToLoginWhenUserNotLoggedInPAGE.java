@@ -20,10 +20,8 @@ public class VerifyRedirectToLoginWhenUserNotLoggedInPAGE {
     @FindBy(xpath = "//h1[text()='CURA Healthcare Service']")
     WebElement confirmationMessageHomePage;
 
-
     @FindBy(className = "lead")
     WebElement confirmationMessageForLoginPage;
-
 
     public void clickOnMakeAppointment() {
         makeAppointment.click();
