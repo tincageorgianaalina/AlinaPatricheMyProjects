@@ -1,0 +1,7 @@
+<suite name="SuitaTestNGHomework3" verbose="1" >
+    <test name="verifyRedirectToLoginWhenUserNotLoggedInTest" >
+        <classes>
+            <class name="alinatinca.Homework3.KatalonDemoCuraHerokuWebPage.tests.VerifyRedirectToLoginWhenUserNotLoggedInTest" />
+        </classes>
+    </test>
+</suite>

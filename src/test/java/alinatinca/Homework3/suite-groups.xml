@@ -1,0 +1,17 @@
+<suite name="Homework3-Desktop Test Suite" verbose="1" >
+
+    <test name="Desktop Tests">
+        <groups>
+            <run>
+                <include name="desktop.H3"  />
+                <include name="mobile.H3" />
+            </run>
+        </groups>
+        <classes>
+            <class name="alinatinca.Homework3.KatalonDemoCuraHerokuWebPage.tests.LoginTest"/>
+            <class name="alinatinca.Homework3.KatalonDemoCuraHerokuWebPage.tests.VerifyRedirectToLoginWhenUserNotLoggedInTest"/>
+            <class name="alinatinca.Homework3.KatalonDemoCuraHerokuWebPage.tests.MakeAppointmentTest"/>
+            <class name="alinatinca.Homework3.KatalonDemoCuraHerokuWebPage.tests.BackToHomePageTests" />
+        </classes>
+    </test>
+</suite>
