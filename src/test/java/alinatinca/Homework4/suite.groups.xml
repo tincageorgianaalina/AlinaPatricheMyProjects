@@ -1,0 +1,18 @@
+<suite name="Homework4-Desktop Test Suite" verbose="1" >
+
+    <test name="Desktop Tests">
+        <groups>
+            <run>
+                <include name="desktop.H4"  />
+                <include name="mobile.H4" />
+            </run>
+        </groups>
+        <classes>
+            <class name="alinatinca.Homework4.BasicAjaxExample.tests.BasicAjaxExampleTests"/>
+            <class name="alinatinca.Homework4.DisabledDynamicButtons.tests.DisabledDynamicButtonsTest"/>
+            <class name="alinatinca.Homework4.JavaScriptRedirects.tests.JavaScriptRedirectsTests"/>
+            <class name="alinatinca.Homework4.RefreshPage.tests.RefreshPageTest" />
+            <class name="alinatinca.Homework4.SimpleDynamicButtons.tests.SimpleDynamicButtonsTest" />
+        </classes>
+    </test>
+</suite>

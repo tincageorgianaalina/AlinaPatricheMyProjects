@@ -1,0 +1,10 @@
+In this project, new test classes will be created, which will include the following scenarios:
+
+https://testpages.herokuapp.com/styled/basic-ajax-test.html - will create tests that use waits to wait for items to load in the dropdown. After selecting the options, it will be checked that they are correct on the next page, after pressing the Code it in button.
+https://testpages.herokuapp.com/styled/javascript-redirect-test.html - will check the buttons that redirect to a new page, using wait and windowHandles
+https://testpages.herokuapp.com/styled/refresh - a test will be created that will verify that the ID in the text changes after each refresh, and that it is equal to the current timestamp (you can use an assert with delta, because we don't need precision to the second)
+https://testpages.herokuapp.com/styled/dynamic-buttons-simple.html - a test will be created that will click on all the buttons, and at the end it will check the displayed message. The message only appears if all buttons have been pressed.
+https://testpages.herokuapp.com/styled/dynamic-buttons-disabled.html - a test will be created that will click on all the buttons, and at the end it will check the displayed message. The message only appears if all buttons have been pressed.
+2 test suites will be created, one for mobile and one for desktop. The driver object will be initialized depending on the type of suite being run (for mobile suite a mobile emulation driver will be initialized, for desktop a maximized browser).
+
+The theme is delivered on Github, and a link to the repository will be uploaded to the platform.
