@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class SimpleDynamicButtonsTest extends BaseTest {
 
     @Test(groups = {"desktop.H4", "mobile.H4"}, description = "verify that the message is displayed after the buttons are clickable")
@@ -25,10 +27,9 @@ public class SimpleDynamicButtonsTest extends BaseTest {
             simpleDynamicButtonsPAGE.clickOnFirstButton();
             simpleDynamicButtonsPAGE.clickOnSecondButton();
             simpleDynamicButtonsPAGE.clickOnThirdButton();
-        }catch (Exception e){
-            SimpleDynamicButtonsConfirmationPAGE simpleDynamicButtonConfirmationPage = new SimpleDynamicButtonsConfirmationPAGE(chromeDriver);
             Assert.assertEquals(simpleDynamicButtonConfirmationPage.displayTextForClickAllButtons(), "All Buttons Clicked");
             System.out.println("The message that appears after opening all the buttons is: " + simpleDynamicButtonConfirmationPage.displayTextForClickAllButtons());
+        }catch (Exception e){
             System.out.println("Test passed!");
         }
     }

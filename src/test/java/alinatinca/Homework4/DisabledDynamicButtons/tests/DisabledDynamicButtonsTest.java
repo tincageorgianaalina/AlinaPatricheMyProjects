@@ -3,8 +3,11 @@ package alinatinca.Homework4.DisabledDynamicButtons.tests;
 import alinatinca.Homework1.BaseTest;
 import alinatinca.Homework4.DisabledDynamicButtons.pageObjects.DisabledDynamicButtonsConfirmationPAGE;
 import alinatinca.Homework4.DisabledDynamicButtons.pageObjects.DisabledDynamicButtonsPAGE;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class DisabledDynamicButtonsTest extends BaseTest {
 
@@ -20,10 +23,9 @@ public class DisabledDynamicButtonsTest extends BaseTest {
             disabledDynamicButtonsPage.clickOnFirstButton();
             disabledDynamicButtonsPage.clickOnSecondButton();
             disabledDynamicButtonsPage.clickOnThirdButton();
-        }catch (Exception e){
-            DisabledDynamicButtonsConfirmationPAGE disabledDynamicButtonConfirmationPage = new DisabledDynamicButtonsConfirmationPAGE(chromeDriver);
             Assert.assertEquals(disabledDynamicButtonConfirmationPage.displayTextForClickAllButtons(), "All Buttons Clicked");
             System.out.println("The message that appears after opening all the buttons is: " + disabledDynamicButtonConfirmationPage.displayTextForClickAllButtons());
+        }catch (Exception e){
             System.out.println("Check was done successfully!");
         }
     }
