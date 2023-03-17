@@ -22,7 +22,7 @@ public class BrowserManager {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver(chromeOptions);
     }
-    //create this method to emulate it on desktop
+   // create this method to emulate it on desktop
 
     public static ChromeDriver getChromeDriverWithOptionsForMobile(){
         Map<String, String> map = new HashMap<>();
