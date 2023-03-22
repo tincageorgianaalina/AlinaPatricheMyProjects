@@ -14,7 +14,14 @@ public class BrowserManager {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
-    //create this method to create the chrome driver instance
+    //create this method to create the chrome driver instance for the old version of Chrome
+
+    public static ChromeDriver createChromeDriverWithOptions(){
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--remote-allow-origins=*");
+        WebDriverManager.chromedriver().setup();
+        return new ChromeDriver(option);
+    }
 
     public static ChromeDriver getChromeDriverWithOptionsForDesktop(){
         ChromeOptions chromeOptions = new ChromeOptions();
