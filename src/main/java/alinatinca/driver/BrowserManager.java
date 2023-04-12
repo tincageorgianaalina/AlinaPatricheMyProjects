@@ -15,10 +15,13 @@ import java.util.Map;
 public class BrowserManager {
 
     //create Chrome browser instance
-    public static ChromeDriver createChromeDriver(){
+    public static ChromeDriver createChromeDriverWithOptions(){
+        ChromeOptions options =new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
-        return new ChromeDriver();
+        return new ChromeDriver(options);
     }
+    //create this method to create the chrome driver instance for new version of Chrome browser
 
     //create Egde browser instance
 //    public static EdgeDriver createEdgeDriver(){

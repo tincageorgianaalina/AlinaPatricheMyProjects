@@ -17,7 +17,7 @@ public class BaseTest {
 
     @BeforeClass
     public void createChromeDriver(){
-        chromeDriver = BrowserManager.createChromeDriver();
+        chromeDriver = BrowserManager.createChromeDriverWithOptions();
     }
 
 //    @BeforeMethod
